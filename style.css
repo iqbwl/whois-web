@@ -11,15 +11,17 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 h1 {
     text-align: center;
 }
 
-form {
+.lookup-form {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 input[type="text"] {
@@ -27,6 +29,8 @@ input[type="text"] {
     padding: 8px;
     border: 1px solid #ccc;
     border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 button {
@@ -35,6 +39,8 @@ button {
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .result {
@@ -42,4 +48,7 @@ button {
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow: auto;
 }
